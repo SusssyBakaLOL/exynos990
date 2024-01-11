@@ -1,0 +1,23 @@
+            - name: GCC Snapshot
+  # You may pin to the exact commit or the version.
+  # uses: JohelEGP/gcc-snapshot@c7b5c01d2429d0708bdd1bd80da5b1ece8f792fb
+  uses: JohelEGP/gcc-snapshot@v1.0.0
+  with:
+    # Whether to use @actions/cache for the snapshot. `true` (default) or `false`.
+    cache: # optional, default is true
+            - name: Install Clang
+  # You may pin to the exact commit or the version.
+  # uses: egor-tensin/setup-clang@ef434b41eb33a70396fb336b1bae39c76d740c3d
+  uses: egor-tensin/setup-clang@v1
+  with:
+    # Version to install
+    version: # optional, default is latest
+    # Target platform
+    platform: # optional, default is x64
+    # Install Cygwin packages
+    cygwin: # optional, default is 0
+    # Set up cc/clang/c++/clang++ executables
+    cc: # optional, default is 1
+    # On Cygwin, replace executable symlinks with hardlinks
+    hardlinks: # optional, default is 0
+          
